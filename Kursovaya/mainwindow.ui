@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1226</width>
+    <height>693</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Клиентское приложение</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../build-Kursovaya-Desktop_Qt_6_2_2_MinGW_64_bit-Debug/png-transparent-computer-icons-big-data-database-data-base-angle-rectangle-black.ico</normaloff>../build-Kursovaya-Desktop_Qt_6_2_2_MinGW_64_bit-Debug/png-transparent-computer-icons-big-data-database-data-base-angle-rectangle-black.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="16" column="3" colspan="2">
+     <widget class="QPushButton" name="insert_owner">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Добавить данные в owner</string>
+      </property>
+     </widget>
+    </item>
+    <item row="46" column="2" colspan="2">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Удалить запись из pay</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="8">
+     <widget class="QPushButton" name="show_owner">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Вывести owner</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="13" colspan="7">
+     <widget class="QTableView" name="tableView">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.root{
+    -fx-background-color: #262626;
+}
+
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+/* Spaltenköpfe
+    Struktur column-header-background -&gt; column-header */
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #424242;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view &gt; .virtual-flow &gt; .scroll-bar:vertical,
+.table-view &gt; .virtual-flow &gt; .scroll-bar:vertical &gt; .track,
+.table-view &gt; .virtual-flow &gt; .scroll-bar:vertical &gt; .track-background, 
+.table-view &gt; .virtual-flow &gt; .scroll-bar:horizontal,
+.table-view &gt; .virtual-flow &gt; .scroll-bar:horizontal &gt; .track,
+.table-view &gt; .virtual-flow &gt; .scroll-bar:horizontal &gt; .track-background {
+    -fx-background-color: transparent;
+}
+
+
+
+.table-view &gt; .virtual-flow &gt; .scroll-bar &gt; .increment-button, 
+.table-view &gt; .virtual-flow &gt; .scroll-bar &gt; .decrement-button {
+    -fx-opacity: 0;
+}</string>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="5" colspan="2">
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Добавить данные в apartment</string>
+      </property>
+     </widget>
+    </item>
+    <item row="46" column="1">
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Отчёт</string>
+      </property>
+     </widget>
+    </item>
+    <item row="46" column="4">
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Изменить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="1" colspan="2">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Добавить данные в в pay</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="9">
+     <widget class="QPushButton" name="pushButton">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Вывести pay</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="8">
+     <widget class="QPushButton" name="show_apartment">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Вывести apartment</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="9">
+     <widget class="QPushButton" name="show_serv_prov">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Вывести service_prov</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="8">
+     <widget class="QPushButton" name="show_serv">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Вывести services</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="8">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <bold>false</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Запросы:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="8">
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Список должников</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="8">
+     <widget class="QLineEdit" name="fio_or_organization">
+      <property name="text">
+       <string>Введите ФИО или Организацию</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="8">
+     <widget class="QPushButton" name="filter_owner">
+      <property name="text">
+       <string>Поиск</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="8">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <bold>false</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Проверка функции</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="8">
+     <widget class="QLineEdit" name="apart_id">
+      <property name="text">
+       <string>Введите ID помещения</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="8">
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="text">
+       <string>Вывести кортёж</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="9">
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Список нежилых</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="8">
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <bold>false</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Проверка процедур:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="8">
+     <widget class="QLineEdit" name="type_serv">
+      <property name="text">
+       <string>Обновить тариф у</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="9">
+     <widget class="QLineEdit" name="value_tarif">
+      <property name="text">
+       <string>На значение</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="8">
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="text">
+       <string>Обновить</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1226</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>Соединение с БД</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
